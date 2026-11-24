@@ -11,3 +11,5 @@
 
 ## 03-tarea4
 - Probada versión monolito con los 8 casos base (códigos 0, 2, 3 y 1).
+
+- Implementado paquete internal/almacenamiento y verificada salida de go doc ./internal/almacenamiento.

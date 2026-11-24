@@ -10,3 +10,5 @@
 - [03-tarea4](./03-tarea4): Conversor de unidades de almacenamiento (B, KB, MB, GB) refactorizado hacia internal/almacenamiento.
 
 - [03-tarea4](./03-tarea4): Conversor de unidades de almacenamiento (B, KB, MB, GB) refactorizado hacia internal/almacenamiento.
+
+  - Agregado paquete interno internal/almacenamiento con documentación go doc.
