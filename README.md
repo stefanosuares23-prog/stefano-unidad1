@@ -8,3 +8,5 @@
 - [04-taller1](./04-taller1): FizzBuzz del 1 al 30 con switch sin condición, contadores y experimento de orden de casos.
 
 - [03-tarea4](./03-tarea4): Conversor de unidades de almacenamiento (B, KB, MB, GB) refactorizado hacia internal/almacenamiento.
+
+- [03-tarea4](./03-tarea4): Conversor de unidades de almacenamiento (B, KB, MB, GB) refactorizado hacia internal/almacenamiento.

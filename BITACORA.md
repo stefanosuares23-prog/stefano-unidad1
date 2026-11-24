@@ -8,3 +8,6 @@
 
 ## 03-tarea4
 - Probada versión monolito con los 8 casos base (códigos 0, 2, 3 y 1).
+
+## 03-tarea4
+- Probada versión monolito con los 8 casos base (códigos 0, 2, 3 y 1).
