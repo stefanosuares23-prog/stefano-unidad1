@@ -5,3 +5,6 @@
 
 ## 04-taller1
 - En un switch sin condición en Go se evalúan los case en orden de arriba hacia abajo y se ejecuta el primero verdadero sin requerir break; moví analizador.go fuera de 04-taller1 para evitar main redeclared in this block.
+
+## 03-tarea4
+- Probada versión monolito con los 8 casos base (códigos 0, 2, 3 y 1).
