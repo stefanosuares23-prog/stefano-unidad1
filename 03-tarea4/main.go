@@ -6,40 +6,16 @@ import (
     "os"
     "strconv"
     "strings"
+
+    "tarea4/internal/almacenamiento"
 )
 
 const (
-    ErrUso    = 1
-    ErrValor  = 2
-    ErrUnidad = 3
+    ErrGeneral = 1
+    ErrUso     = 2
+    ErrValor   = 3
+    ErrUnidad  = 4
 )
-
-const (
-    B  = 1.0
-    KB = 1024 * B
-    MB = 1024 * KB
-    GB = 1024 * MB
-)
-
-func bytesUnidad(unidad string) (float64, bool) {
-    switch unidad {
-    case "B":
-        return B, true
-    case "KB":
-        return KB, true
-    case "MB":
-        return MB, true
-    case "GB":
-        
-        return GB, true
-    default:
-        return 0, false
-    }
-}
-
-func redondear2(v float64) float64 {
-    return math.Round(v*100) / 100
-}
 
 func main() {
     if len(os.Args) != 4 {
@@ -57,13 +33,13 @@ func main() {
     origen := strings.ToUpper(os.Args[2])
     destino := strings.ToUpper(os.Args[3])
 
-    bytesOrigen, okOrigen := bytesUnidad(origen)
-    bytesDestino, okDestino := bytesUnidad(destino)
+    bytesOrigen, okOrigen := almacenamiento.Bytes(origen)
+    bytesDestino, okDestino := almacenamiento.Bytes(destino)
     if !okOrigen || !okDestino {
         fmt.Fprintln(os.Stderr, "Error: unidad inválida (use B, KB, MB o GB)")
         os.Exit(ErrUnidad)
     }
 
-    resultado := redondear2(valor * bytesOrigen / bytesDestino)
+    resultado := almacenamiento.Convertir(valor, bytesOrigen, bytesDestino)
     fmt.Printf("%s %s = %.2f %s\n", valorStr, origen, resultado, destino)
 }

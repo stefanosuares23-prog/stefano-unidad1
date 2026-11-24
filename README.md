@@ -12,3 +12,5 @@
 - [03-tarea4](./03-tarea4): Conversor de unidades de almacenamiento (B, KB, MB, GB) refactorizado hacia internal/almacenamiento.
 
   - Agregado paquete interno internal/almacenamiento con documentación go doc.
+
+  - Refactorizado main.go para consumir 	area4/internal/almacenamiento.
