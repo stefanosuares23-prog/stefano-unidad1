@@ -14,3 +14,5 @@
   - Agregado paquete interno internal/almacenamiento con documentación go doc.
 
   - Refactorizado main.go para consumir 	area4/internal/almacenamiento.
+
+  - Validados los 8 casos de prueba (códigos de salida 0, 2, 3 y 4).
