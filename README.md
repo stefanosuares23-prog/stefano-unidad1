@@ -16,3 +16,5 @@
   - Refactorizado main.go para consumir 	area4/internal/almacenamiento.
 
   - Validados los 8 casos de prueba (códigos de salida 0, 2, 3 y 4).
+
+- [05-taller1](./05-taller1): Función variádica en Go para calcular nota menor, mayor, promedio y validar error centinela con errors.Is.
